@@ -1,0 +1,29 @@
+.header {
+    background-color: coral;
+    display: flex;
+
+    .logo {
+        width: 125px;
+    }
+
+    .navbar {
+display: flex;
+        ul {
+            display: flex;
+            align-items: end;
+
+            li {
+                margin: 5px;
+            }
+
+
+        }
+    }
+
+
+
+
+
+
+
+}
