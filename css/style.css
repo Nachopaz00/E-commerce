@@ -79,6 +79,45 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 0px, 0px; }
 
+.title {
+  padding-top: 230px; }
+
+.container-pages {
+  display: grid;
+  grid-template-columns: 0.5fr 1.3fr; }
+  .container-pages .main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .container-pages .main .card {
+      margin: 5px;
+      display: flex;
+      width: 300px;
+      height: 400px;
+      align-items: center;
+      border: 2px solid cornflowerblue;
+      flex-direction: column; }
+      .container-pages .main .card img {
+        display: flex;
+        align-items: center;
+        width: 200px; }
+      .container-pages .main .card h6 {
+        margin: 5px; }
+      .container-pages .main .card a {
+        padding-top: 15px; }
+        .container-pages .main .card a h5 {
+          margin-top: 6px;
+          border: 2px solid orange;
+          border-radius: 5px; }
+      .container-pages .main .card h4 {
+        display: flex;
+        justify-content: center; }
+      .container-pages .main .card h1 {
+        margin-top: 200px; }
+  .container-pages .aside {
+    margin-top: 120px; }
+
 .footer {
   margin-top: 50px; }
   .footer img {

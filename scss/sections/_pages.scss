@@ -1,0 +1,62 @@
+.title {
+    padding-top: 230px;
+}
+
+.container-pages {
+    display: grid;
+    grid-template-columns: 0.5fr 1.3fr;
+
+    .main {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        .card {
+
+            margin: 5px;
+            display: flex;
+            width: 300px;
+            height: 400px;
+            align-items: center;
+            border: 2px solid cornflowerblue;
+            flex-direction: column;
+
+            img {
+                display: flex;
+                align-items: center;
+                width: 200px;
+            }
+
+            h6 {
+
+                margin: 5px;
+            }
+
+            a {
+                padding-top: 15px;
+
+                h5 {
+                    margin-top: 6px;
+                    border: 2px solid orange;
+                    border-radius: 5px;
+                }
+            }
+
+            h4 {
+                display: flex;
+                justify-content: center;
+            }
+
+            h1 {
+                margin-top: 200px;
+            }
+
+        }
+    }
+
+    .aside {
+        margin-top: 120px;
+    }
+}
