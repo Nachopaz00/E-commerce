@@ -1,0 +1,10 @@
+.menu-container {
+    display: grid;
+    margin-top: 455px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px, 0px;
+
+    .menu {
+        @extend .centrar;
+    }
+}

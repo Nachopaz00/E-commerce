@@ -23,6 +23,21 @@ ul {
 a {
   text-decoration: none; }
 
+.centrar, .menu-container .menu {
+  position: relative;
+  display: inline-block; }
+  .centrar img, .menu-container .menu img {
+    padding: 5px;
+    display: block;
+    max-width: 100%; }
+  .centrar h2, .menu-container .menu h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px; }
+
 .header {
   background-color: coral;
   display: flex; }
@@ -35,3 +50,50 @@ a {
       align-items: end; }
       .header .navbar ul li {
         margin: 5px; }
+
+.carousel-container {
+  max-width: 100%;
+  margin-top: 10px;
+  position: relative; }
+  .carousel-container .carousel-slide {
+    display: flex;
+    overflow: hidden; }
+    .carousel-container .carousel-slide img {
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .carousel-container .carousel-slide img.active {
+    opacity: 1;
+    z-index: 2; }
+  .carousel-container .carousel-slide img.next {
+    opacity: 0;
+    z-index: 1; }
+
+.menu-container {
+  display: grid;
+  margin-top: 455px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px, 0px; }
+
+.footer {
+  margin-top: 50px; }
+  .footer img {
+    padding: 5px;
+    width: 50px; }
+  .footer ul {
+    display: flex;
+    justify-content: center; }
+    .footer ul li {
+      list-style: none;
+      border-radius: 5px;
+      display: inline-block;
+      text-align: center;
+      width: 45px;
+      height: 45px; }
+      .footer ul li a {
+        justify-content: center;
+        text-decoration: none; }
